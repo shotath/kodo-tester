@@ -9,10 +9,24 @@
 /* Begin PBXBuildFile section */
 		816AC0AC1B6D247300DBB2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0AB1B6D247300DBB2F2 /* AppDelegate.swift */; };
 		816AC0C21B6D247300DBB2F2 /* kodo_testerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0C11B6D247300DBB2F2 /* kodo_testerTests.swift */; };
-		816AC0D91B6D266A00DBB2F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0D81B6D266A00DBB2F2 /* ViewController.swift */; };
+		816AC0D91B6D266A00DBB2F2 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0D81B6D266A00DBB2F2 /* TopViewController.swift */; };
 		816AC0DE1B6D269B00DBB2F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816AC0DC1B6D269B00DBB2F2 /* LaunchScreen.xib */; };
 		816AC0DF1B6D269B00DBB2F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816AC0DD1B6D269B00DBB2F2 /* Main.storyboard */; };
 		816AC0E11B6D26B300DBB2F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816AC0E01B6D26B300DBB2F2 /* Images.xcassets */; };
+		816AC0E31B6D2A2000DBB2F2 /* ImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0E21B6D2A2000DBB2F2 /* ImageSelectionViewController.swift */; };
+		816AC0E51B6D2A6D00DBB2F2 /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0E41B6D2A6D00DBB2F2 /* SearchImageViewController.swift */; };
+		816AC0E71B6D2F6800DBB2F2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0E61B6D2F6800DBB2F2 /* ResultViewController.swift */; };
+		816AC0E91B6D2F7600DBB2F2 /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0E81B6D2F7600DBB2F2 /* ResultDetailViewController.swift */; };
+		816AC0EB1B6D2FB800DBB2F2 /* TestStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0EA1B6D2FB800DBB2F2 /* TestStartViewController.swift */; };
+		816AC0ED1B6D302D00DBB2F2 /* WaitingCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0EC1B6D302D00DBB2F2 /* WaitingCheckViewController.swift */; };
+		816AC0F11B6D309700DBB2F2 /* CheckCompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0F01B6D309700DBB2F2 /* CheckCompletionViewController.swift */; };
+		816AC0F31B6D30A300DBB2F2 /* TestCompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0F21B6D30A300DBB2F2 /* TestCompletionViewController.swift */; };
+		816AC0F51B6D30C600DBB2F2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0F41B6D30C600DBB2F2 /* CheckViewController.swift */; };
+		816AC0F71B6D31B800DBB2F2 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0F61B6D31B800DBB2F2 /* ArchiveViewController.swift */; };
+		816AC0F91B6D31C700DBB2F2 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0F81B6D31C700DBB2F2 /* AboutAppViewController.swift */; };
+		816AC0FB1B6D31DF00DBB2F2 /* HowToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */; };
+		816AC0FD1B6D31EF00DBB2F2 /* CancelTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FC1B6D31EF00DBB2F2 /* CancelTestViewController.swift */; };
+		816AC0FF1B6D320800DBB2F2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +46,24 @@
 		816AC0BB1B6D247300DBB2F2 /* kodo-testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kodo-testerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		816AC0C01B6D247300DBB2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816AC0C11B6D247300DBB2F2 /* kodo_testerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kodo_testerTests.swift; sourceTree = "<group>"; };
-		816AC0D81B6D266A00DBB2F2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		816AC0D81B6D266A00DBB2F2 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = Controllers/TopViewController.swift; sourceTree = "<group>"; };
 		816AC0DC1B6D269B00DBB2F2 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Views/LaunchScreen.xib; sourceTree = "<group>"; };
 		816AC0DD1B6D269B00DBB2F2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main.storyboard; sourceTree = "<group>"; };
 		816AC0E01B6D26B300DBB2F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Images/Images.xcassets; sourceTree = "<group>"; };
+		816AC0E21B6D2A2000DBB2F2 /* ImageSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSelectionViewController.swift; path = Controllers/ImageSelectionViewController.swift; sourceTree = "<group>"; };
+		816AC0E41B6D2A6D00DBB2F2 /* SearchImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchImageViewController.swift; path = Controllers/SearchImageViewController.swift; sourceTree = "<group>"; };
+		816AC0E61B6D2F6800DBB2F2 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Controllers/ResultViewController.swift; sourceTree = "<group>"; };
+		816AC0E81B6D2F7600DBB2F2 /* ResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultDetailViewController.swift; path = Controllers/ResultDetailViewController.swift; sourceTree = "<group>"; };
+		816AC0EA1B6D2FB800DBB2F2 /* TestStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestStartViewController.swift; path = Controllers/TestStartViewController.swift; sourceTree = "<group>"; };
+		816AC0EC1B6D302D00DBB2F2 /* WaitingCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingCheckViewController.swift; path = Controllers/WaitingCheckViewController.swift; sourceTree = "<group>"; };
+		816AC0F01B6D309700DBB2F2 /* CheckCompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckCompletionViewController.swift; path = Controllers/CheckCompletionViewController.swift; sourceTree = "<group>"; };
+		816AC0F21B6D30A300DBB2F2 /* TestCompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestCompletionViewController.swift; path = Controllers/TestCompletionViewController.swift; sourceTree = "<group>"; };
+		816AC0F41B6D30C600DBB2F2 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckViewController.swift; path = Controllers/CheckViewController.swift; sourceTree = "<group>"; };
+		816AC0F61B6D31B800DBB2F2 /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArchiveViewController.swift; path = Controllers/ArchiveViewController.swift; sourceTree = "<group>"; };
+		816AC0F81B6D31C700DBB2F2 /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutAppViewController.swift; path = Controllers/AboutAppViewController.swift; sourceTree = "<group>"; };
+		816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToTestViewController.swift; path = Controllers/HowToTestViewController.swift; sourceTree = "<group>"; };
+		816AC0FC1B6D31EF00DBB2F2 /* CancelTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CancelTestViewController.swift; path = Controllers/CancelTestViewController.swift; sourceTree = "<group>"; };
+		816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +152,21 @@
 		816AC0D21B6D25E300DBB2F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				816AC0D81B6D266A00DBB2F2 /* ViewController.swift */,
+				816AC0F81B6D31C700DBB2F2 /* AboutAppViewController.swift */,
+				816AC0F61B6D31B800DBB2F2 /* ArchiveViewController.swift */,
+				816AC0FC1B6D31EF00DBB2F2 /* CancelTestViewController.swift */,
+				816AC0F01B6D309700DBB2F2 /* CheckCompletionViewController.swift */,
+				816AC0F41B6D30C600DBB2F2 /* CheckViewController.swift */,
+				816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */,
+				816AC0E21B6D2A2000DBB2F2 /* ImageSelectionViewController.swift */,
+				816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */,
+				816AC0E81B6D2F7600DBB2F2 /* ResultDetailViewController.swift */,
+				816AC0E61B6D2F6800DBB2F2 /* ResultViewController.swift */,
+				816AC0E41B6D2A6D00DBB2F2 /* SearchImageViewController.swift */,
+				816AC0F21B6D30A300DBB2F2 /* TestCompletionViewController.swift */,
+				816AC0EA1B6D2FB800DBB2F2 /* TestStartViewController.swift */,
+				816AC0D81B6D266A00DBB2F2 /* TopViewController.swift */,
+				816AC0EC1B6D302D00DBB2F2 /* WaitingCheckViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -236,8 +278,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				816AC0D91B6D266A00DBB2F2 /* ViewController.swift in Sources */,
+				816AC0FD1B6D31EF00DBB2F2 /* CancelTestViewController.swift in Sources */,
+				816AC0E91B6D2F7600DBB2F2 /* ResultDetailViewController.swift in Sources */,
+				816AC0F91B6D31C700DBB2F2 /* AboutAppViewController.swift in Sources */,
+				816AC0EB1B6D2FB800DBB2F2 /* TestStartViewController.swift in Sources */,
+				816AC0E71B6D2F6800DBB2F2 /* ResultViewController.swift in Sources */,
+				816AC0D91B6D266A00DBB2F2 /* TopViewController.swift in Sources */,
+				816AC0E31B6D2A2000DBB2F2 /* ImageSelectionViewController.swift in Sources */,
+				816AC0FF1B6D320800DBB2F2 /* MenuViewController.swift in Sources */,
+				816AC0E51B6D2A6D00DBB2F2 /* SearchImageViewController.swift in Sources */,
+				816AC0F11B6D309700DBB2F2 /* CheckCompletionViewController.swift in Sources */,
+				816AC0F71B6D31B800DBB2F2 /* ArchiveViewController.swift in Sources */,
+				816AC0ED1B6D302D00DBB2F2 /* WaitingCheckViewController.swift in Sources */,
+				816AC0FB1B6D31DF00DBB2F2 /* HowToTestViewController.swift in Sources */,
+				816AC0F31B6D30A300DBB2F2 /* TestCompletionViewController.swift in Sources */,
 				816AC0AC1B6D247300DBB2F2 /* AppDelegate.swift in Sources */,
+				816AC0F51B6D30C600DBB2F2 /* CheckViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
