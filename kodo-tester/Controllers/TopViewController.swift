@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TopViewController.swift
 //  kodo-tester
 //
 //  Created by shota_th on 2015/08/02.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

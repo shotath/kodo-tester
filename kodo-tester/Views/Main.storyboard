@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IEm-4Y-5OK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Top View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="TopViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -17,9 +17,298 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZbK-Og-kGP"/>
+                    <connections>
+                        <segue destination="JWs-q6-QZa" kind="show" identifier="WaitingSegue" id="2kl-0J-alI"/>
+                        <segue destination="JRV-4E-Bdc" kind="show" identifier="ImageSelectSegue" id="1xN-A6-FmB"/>
+                        <segue destination="Pku-HF-g38" kind="show" identifier="CheckSegue" id="zN9-Re-dPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1244" y="474"/>
+        </scene>
+        <!--Check View Controller-->
+        <scene sceneID="KpH-ST-1xM">
+            <objects>
+                <viewController id="Pku-HF-g38" customClass="CheckViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k5Q-Yw-zsE"/>
+                        <viewControllerLayoutGuide type="bottom" id="2s2-u1-ypi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="boE-Ag-gFy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="QY7-ac-RL6" kind="show" identifier="CheckCompletionSegue" id="GRM-fZ-DkW"/>
+                        <segue destination="0To-L9-mW5" kind="show" identifier="TestCompletionSegue" id="FcZ-iH-yOI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgR-oD-kId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="474"/>
+        </scene>
+        <!--Test Completion View Controller-->
+        <scene sceneID="MTl-1d-bjr">
+            <objects>
+                <viewController id="0To-L9-mW5" customClass="TestCompletionViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qD8-GP-Lqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="V0r-XO-nSt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QtD-w6-HY1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="M6B-Uz-YUi" kind="show" identifier="NextSegue" id="b1H-VV-5xZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eI-3H-gI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="804"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="hvH-gs-B9y">
+            <objects>
+                <viewController id="rau-Iv-gjW" customClass="MenuViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wf6-52-w95"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8d-ge-7L2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AKS-JB-vNI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="m47-kA-9Dc" kind="show" identifier="ArchiveSegue" id="G2D-3M-MSF"/>
+                        <segue destination="qag-u5-prY" kind="show" identifier="CancelSegue" id="oZu-GH-gJu"/>
+                        <segue destination="yyh-5b-9fR" kind="show" identifier="HowToTestSegue" id="lrJ-hX-Ggf"/>
+                        <segue destination="U9H-I5-zqc" kind="show" identifier="AboutSegue" id="3xC-tW-JBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lg-do-Mzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="1884"/>
+        </scene>
+        <!--Archive View Controller-->
+        <scene sceneID="Qa4-st-Aga">
+            <objects>
+                <viewController id="m47-kA-9Dc" customClass="ArchiveViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lsl-Y1-9mO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ueM-Yy-d1w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4D-LC-SjB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="M6B-Uz-YUi" kind="show" identifier="NextSegue" id="cHG-cv-hHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbF-0x-Zi9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="1884"/>
+        </scene>
+        <!--About App View Controller-->
+        <scene sceneID="HcR-Bx-o1Y">
+            <objects>
+                <viewController id="U9H-I5-zqc" customClass="AboutAppViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YdQ-jT-Lit"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH0-27-iKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8UP-zn-G6X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Qf-NI-kip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="4032"/>
+        </scene>
+        <!--How To Test View Controller-->
+        <scene sceneID="9dw-dS-481">
+            <objects>
+                <viewController id="yyh-5b-9fR" customClass="HowToTestViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="at1-wg-NGo"/>
+                        <viewControllerLayoutGuide type="bottom" id="L4m-T0-h98"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VVu-8x-vco">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoN-2o-Ja9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="3324"/>
+        </scene>
+        <!--Cancel Test View Controller-->
+        <scene sceneID="KFC-aE-1YX">
+            <objects>
+                <viewController id="qag-u5-prY" customClass="CancelTestViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mmm-6M-HPr"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWg-Y9-uFp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ytP-z2-2G9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8e-nx-gP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="2620"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="y5a-R4-SP3">
+            <objects>
+                <viewController id="M6B-Uz-YUi" customClass="ResultViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fyg-uL-pWu"/>
+                        <viewControllerLayoutGuide type="bottom" id="8R9-dS-fD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SOi-Ne-A44">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="1RV-gV-nc5" kind="show" identifier="NextSegue" id="CTn-Sx-p6X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpT-B4-ant" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3278" y="804"/>
+        </scene>
+        <!--Result Detail View Controller-->
+        <scene sceneID="Bcx-3T-vng">
+            <objects>
+                <viewController id="1RV-gV-nc5" customClass="ResultDetailViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="je3-Gf-Bmk"/>
+                        <viewControllerLayoutGuide type="bottom" id="6CT-rb-XOG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aFs-Fr-It1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gM7-GO-vjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3957" y="804"/>
+        </scene>
+        <!--Check Completion View Controller-->
+        <scene sceneID="BxC-G9-lcb">
+            <objects>
+                <viewController id="QY7-ac-RL6" customClass="CheckCompletionViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zCE-5b-GO2"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuW-l4-rz4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0fj-lP-i9b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZs-Z6-ZXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="64"/>
+        </scene>
+        <!--Image Selection View Controller-->
+        <scene sceneID="Qjf-sO-uGE">
+            <objects>
+                <viewController id="JRV-4E-Bdc" customClass="ImageSelectionViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U9N-N9-Jch"/>
+                        <viewControllerLayoutGuide type="bottom" id="GPj-3M-Ezh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8QK-k2-gQn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="6lw-pV-9kg" kind="show" identifier="SearchSegue" id="rov-Sg-QlM"/>
+                        <segue destination="rau-Iv-gjW" kind="show" identifier="MenuSegue" id="hVc-rj-zZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTB-rl-t48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="-598"/>
+        </scene>
+        <!--Search Image View Controller-->
+        <scene sceneID="CeR-cq-ITD">
+            <objects>
+                <viewController id="6lw-pV-9kg" customClass="SearchImageViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pat-nH-Zak"/>
+                        <viewControllerLayoutGuide type="bottom" id="cSE-db-tQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z7H-J7-sQh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1D-gW-TCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="-598"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xue-qK-kmb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IEm-4Y-5OK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PND-bj-sSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="kPY-Je-MqG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POX-UH-c2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="474"/>
+        </scene>
+        <!--Waiting Check View Controller-->
+        <scene sceneID="EAE-2j-Iz2">
+            <objects>
+                <viewController id="JWs-q6-QZa" customClass="WaitingCheckViewController" customModule="kodo_tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d21-05-8PC"/>
+                        <viewControllerLayoutGuide type="bottom" id="gBe-ec-w8w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XFJ-7Z-t7r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="rau-Iv-gjW" kind="show" identifier="MenuSegue" id="qp4-Cv-ed4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzf-mo-asf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="1184"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hVc-rj-zZr"/>
+        <segue reference="cHG-cv-hHb"/>
+    </inferredMetricsTieBreakers>
 </document>
