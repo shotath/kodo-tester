@@ -27,6 +27,8 @@
 		816AC0FB1B6D31DF00DBB2F2 /* HowToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */; };
 		816AC0FD1B6D31EF00DBB2F2 /* CancelTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FC1B6D31EF00DBB2F2 /* CancelTestViewController.swift */; };
 		816AC0FF1B6D320800DBB2F2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */; };
+		818D33061B7608F200A71F9E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D33051B7608F200A71F9E /* Functions.swift */; };
+		81E6570A1B6E557B008835F0 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E657091B6E557B008835F0 /* json.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToTestViewController.swift; path = Controllers/HowToTestViewController.swift; sourceTree = "<group>"; };
 		816AC0FC1B6D31EF00DBB2F2 /* CancelTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CancelTestViewController.swift; path = Controllers/CancelTestViewController.swift; sourceTree = "<group>"; };
 		816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
+		818D33051B7608F200A71F9E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		81E657091B6E557B008835F0 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = Controllers/json.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				816AC0AB1B6D247300DBB2F2 /* AppDelegate.swift */,
+				818D33051B7608F200A71F9E /* Functions.swift */,
 				816AC0D31B6D25F000DBB2F2 /* Models */,
 				816AC0CB1B6D25A800DBB2F2 /* Views */,
 				816AC0D21B6D25E300DBB2F2 /* Controllers */,
@@ -159,6 +164,7 @@
 				816AC0F41B6D30C600DBB2F2 /* CheckViewController.swift */,
 				816AC0FA1B6D31DF00DBB2F2 /* HowToTestViewController.swift */,
 				816AC0E21B6D2A2000DBB2F2 /* ImageSelectionViewController.swift */,
+				81E657091B6E557B008835F0 /* json.swift */,
 				816AC0FE1B6D320800DBB2F2 /* MenuViewController.swift */,
 				816AC0E81B6D2F7600DBB2F2 /* ResultDetailViewController.swift */,
 				816AC0E61B6D2F6800DBB2F2 /* ResultViewController.swift */,
@@ -289,7 +295,9 @@
 				816AC0E51B6D2A6D00DBB2F2 /* SearchImageViewController.swift in Sources */,
 				816AC0F11B6D309700DBB2F2 /* CheckCompletionViewController.swift in Sources */,
 				816AC0F71B6D31B800DBB2F2 /* ArchiveViewController.swift in Sources */,
+				818D33061B7608F200A71F9E /* Functions.swift in Sources */,
 				816AC0ED1B6D302D00DBB2F2 /* WaitingCheckViewController.swift in Sources */,
+				81E6570A1B6E557B008835F0 /* json.swift in Sources */,
 				816AC0FB1B6D31DF00DBB2F2 /* HowToTestViewController.swift in Sources */,
 				816AC0F31B6D30A300DBB2F2 /* TestCompletionViewController.swift in Sources */,
 				816AC0AC1B6D247300DBB2F2 /* AppDelegate.swift in Sources */,

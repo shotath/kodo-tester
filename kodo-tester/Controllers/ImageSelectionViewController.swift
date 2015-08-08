@@ -8,28 +8,62 @@
 
 import UIKit
 
+private let SearchSegue = "SearchSegue"
+
 class ImageSelectionViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
+    
+    @IBOutlet private weak var nameLabelA: UILabel!
+    @IBOutlet private weak var imageViewA: UIImageView!
+    @IBOutlet private weak var addButtonA: UIButton!
+    @IBOutlet private weak var nameLabelB: UILabel!
+    @IBOutlet private weak var imageViewB: UIImageView!
+    @IBOutlet private weak var addButtonB: UIButton!
+    @IBOutlet private weak var okButton: UIButton!
+    
+    var selectedImage: UIImage?
+    
+    private var selectedImageView: UIImageView?
+    
+    // MARK: - Life cycles
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addButtonA.tag = 0
+        addButtonB.tag = 1
     }
-    */
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if let selectedImage = selectedImage,
+           let selectedImageView = selectedImageView {
+            selectedImageView.image = selectedImage
+        }
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if let vc = segue.destinationViewController as? SearchImageViewController {
+//            navigationController?.setNavigationBarHidden(true, animated: true)
+//        }
+    }
+    
+    // MARK: - Button actions
+    
+    @IBAction func okButtonAction(sender: AnyObject) {
+    }
 
+    @IBAction func addButtonAction(sender: UIButton) {
+        if sender.tag == 0 {
+            selectedImageView = imageViewA
+        }
+        else {
+            selectedImageView = imageViewB
+        }
+        performSegueWithIdentifier(SearchSegue, sender: nil)
+    }
 }
