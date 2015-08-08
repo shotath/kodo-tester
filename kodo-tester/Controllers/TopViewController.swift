@@ -8,16 +8,25 @@
 
 import UIKit
 
+private let ImageSelectionSegue = "ImageSelectionSegue"
+private let WaitingCheckSegue = "WaitingCheckSegue"
+private let CheckSegue = "CheckSegue"
+
 class TopViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
+    
+    // MARK: - Life cycles
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        performSegueWithIdentifier(ImageSelectionSegue, sender: nil)
     }
 
 
